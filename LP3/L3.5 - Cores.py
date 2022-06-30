@@ -6,7 +6,7 @@ for i in range(3):
 def mix_color(rgb: str = None):
     '''
     Args:
-        list_rgb (list):
+        rgb (str):
     Return:
         color (str):
     '''    
