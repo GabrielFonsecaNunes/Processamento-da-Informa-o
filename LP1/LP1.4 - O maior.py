@@ -1,3 +1,17 @@
+'''
+Faça um programa que leia dois números inteiros e apresente o maior dos 
+dois valores. Nesta questão está proibido usar if (isto é, não deve se 
+usar nenhuma estrutura condicional) ou a função max.
+Dica: A seguinte fórmula permite calcular apenas o maior valor dados os 
+números x e y:
+
+Entrada
+    A entrada contém dois números inteiros.
+Saída
+    Seu programa deve imprimir na tela o maior dos dois valores, conforme 
+    exemplo fornecido.    
+'''
+
 v = []
 
 for i in range(2):
