@@ -16,6 +16,16 @@ class Matrix:
         self.matrix : list[list[int]] = matrix
         self.shape: tuple = (len(matrix), len(matrix[0]))
 
+    def add_row():
+        '''
+        '''
+        pass
+    
+    def add_col():
+        '''
+        '''
+        pass
+
     def sum_min_values_col(self) -> int:
         """
         Returns:
@@ -47,7 +57,6 @@ class Matrix:
 
         sum_values = int(sum(values))
         return sum_values
-
 
 n = int(input())
 matrix: list[list[float]] = list()

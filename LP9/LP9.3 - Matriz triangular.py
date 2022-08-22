@@ -21,7 +21,28 @@ class Matrix:
         self.matrix : list[list[float]] = matrix
         self.shape: tuple = (len(matrix), len(matrix[0]))
 
+    
+    def transpose(self):
+        """
+        Returns:
+            matrix_transpose (list[list[int]]): This function transpose 
+            the matrix.
+        """
+        n, m = self.shape
+        matrix_transpose :list[list[int]] = list()
+
+        for i in range(n):
+            for j in range(m):
+                matrix_transpose[i][j] = self.matrix[j][i]
+
+        return matrix_transpose
+
     def is_diagonal(self) -> bool:
+        """
+        Returns:
+            bool: This function check if matrix is 
+            diagonal
+        """
         n, m = self.shape
         for i in range(n):
             for j in range(m):
@@ -30,6 +51,11 @@ class Matrix:
         return True
 
     def is_upper_triangular(self) -> bool:
+        """
+        Returns:
+            bool: This function check if matrix is 
+            upper triangular
+        """
         n, m = self.shape
         if self.is_diagonal() == False:
             for i in range(n):
@@ -42,6 +68,11 @@ class Matrix:
             return False
 
     def is_lower_triangular(self) -> bool:
+        """
+        Returns:
+            bool: This function check if matrix is 
+            lower triangular
+        """
         n, m = self.shape
         if self.is_diagonal() == False:
             for i in range(n):
@@ -71,6 +102,5 @@ elif obj.is_lower_triangular():
 
 elif obj.is_diagonal():
     print("diagonal")
-
 else:
     print("nao triangular")
